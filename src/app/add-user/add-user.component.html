@@ -1,0 +1,88 @@
+<div id="one">
+		<p id ="p1">
+		<font><b>HTML POC BY SHUBHAM</b></font>
+		</p>
+	</div>
+	<div id="mainMenu">
+		<section id="title">
+			<nav>
+				<ul>
+					<li><b>Main Menu</b>
+						<ol class="m">
+							<li><a routerLink="/datatable">Users Listing</a></li>
+							<li><a routerLink="addUser">Add User</a></li>
+						</ol>
+					</li>
+					<li>HTML</li>
+					<li>PHP</li>
+					<li>PEARL...</li>
+				</ul>
+			</nav>
+		</section>
+		<div id="tutorial">
+			<form [formGroup]="addForm" (ngSubmit)="addPost(addForm.value)">
+        <div class="form-container" >   
+          <div class="row-columns" > 
+    <label for="profile">
+     profile<br>
+    <input id="profile" type="text" placeholder="Profile" formControlName="profile">
+  </label>
+  <div class="alert" *ngIf="!addForm.controls['profile'].valid && addForm.controls['profile'].touched">Check Length</div>
+
+  <br>
+
+    <label for="name">
+      Name<br>
+    <input id="name" type="text" placeholder="Name" formControlName="name">
+  </label>
+  <div class="alert" *ngIf="!addForm.controls['name'].valid && addForm.controls['name'].touched">{{alert}}</div>
+  
+  <br>
+    <label for="email"> 
+      Email<br>
+    <input id="email" type="text" placeholder="Email" formControlName="email">
+    <div class="alert" *ngIf="!addForm.controls['email'].valid && addForm.controls['email'].touched">Check Email
+    </div>
+  </label><br>
+    <label for="password">
+      Password<br>
+<input placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+<div class="alert" *ngIf="!addForm.controls['password'].valid && addForm.controls['password'].touched">Check Password</div>
+  </label><br>
+  <label for="checkbox">
+  <input type="checkbox" formControlName="check" (click)="showHide()">Show Password
+
+  </label><br>
+  <label for="dob">
+      dob<br>
+    <input id="dob" type="date" formControlName="dob">
+    <div class="alert" *ngIf="!addForm.controls['dob'].valid && addForm.controls['dob'].touched">This field is Required</div>
+  </label><br>
+    <label for="phone">
+      Phone<br>
+    <input id="phone" type="text" formControlName="phone">
+    <div class="alert" *ngIf="!addForm.controls['phone'].valid && addForm.controls['phone'].touched">Check Phone</div>
+  </label><br>
+    <label for="color">
+      ProfileColor<br>
+    <input id="color" type="color" formControlName="color">
+    <div class="alert" *ngIf="!addForm.controls['color'].valid && addForm.controls['color'].touched">Check Length</div>
+  </label><br>
+  <label for="validator">
+    Terms And Conditions
+  <input id="validator" type="checkbox" formControlName="validator" value="1">
+  <div class="alert" *ngIf="!addForm.controls['color'].valid && addForm.controls['color'].touched">
+  <div class="alert" *ngIf="!addForm.controls['validator'].valid && addForm.controls['validator'].untouched">Please accept Terms and Condition</div>
+</div></label><br>
+
+<input type="submit" class="button expanded" value="Submit Form" (click)="goBack()" [disabled]="!addForm.valid">
+</div></div>
+</form>		
+    </div>
+    
+		<section id="copyright">
+			<p id="p2"><font>Copyright &#169;2007 Tutorialspoint.com</font></p> 
+</section>
+
+
+

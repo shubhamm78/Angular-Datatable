@@ -1,0 +1,91 @@
+
+#one
+{
+background-color: #7DE6B1;
+height:80px; 
+}
+#mainMenu
+{
+width:20%;
+height:400px;
+
+top:13%;
+}
+#title
+{
+	background:gray;
+}
+ol.m{list-style-type: lower-alpha;}
+nav ul ol{
+		width: 200px;
+	
+		background: 1px solid #ccc;
+		display: none;
+		}
+		nav ul li:hover > ol{
+			display: block;
+		}
+nav ul ol li a
+{
+	color: black;
+	text-decoration: none;
+}
+nav ul ol li a:hover
+{
+	color: white;
+	
+}
+table td a
+{
+	color: black;
+	padding-left: 2%;
+	padding-right: 1%;
+	text-decoration: none;
+}
+table
+{
+	
+	padding: 5px 5px;
+}
+table td a:hover
+{
+	color: gray;
+	text-decoration: none;
+}
+table th
+{
+	background-color: green;
+}
+#ul
+{
+	list-style-type: none;
+}
+#p1
+{
+	padding-top: 22px;padding-left: 10px;
+}
+#Caption{
+	font-family:verdana;font-size:15px;
+}
+#title
+{
+	padding-top: 7px;height:394px;
+}
+#tutorial
+{
+	float:right;position: absolute;left:20%;height:407px;width:80%;top:15%;margin-left: 1%;
+}
+#example
+{
+	width:100%;
+}
+table {
+	width: 100%;
+  }
+  .mat-form-field {
+	font-size: 14px;
+	width: 40%;
+
+	border:1px dotted;
+  }
+  

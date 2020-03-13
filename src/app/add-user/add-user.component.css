@@ -1,0 +1,93 @@
+.form-container {
+    padding:2em;
+    margin-top: 0.2%;
+}
+
+.alert {
+    background: #f2edda;
+    padding: 7px;
+    font-size: .9em;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: 2s alertAnim forwards;
+}
+
+.button {
+    margin-top: 3rem;
+}
+h1 {
+    margin-bottom: 2rem;
+    font-weight:bold;
+    font-family:'Muli';
+    font-size: 2em;
+}
+
+
+@keyframes alertAnim {
+    from {
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+#one
+{
+background-color: #7DE6B1;
+height:80px; 
+}
+#mainMenu
+{
+width:20%;
+height:400px;
+
+top:13%;
+}
+#title
+{
+	background:gray;
+	padding-top: 7px;height:121%;
+}
+ol.m{list-style-type: lower-alpha;}
+nav ul ol{
+		width: 200px;
+	
+		background: 1px solid #ccc;
+		display: none;
+		}
+		nav ul li:hover > ol{
+			display: block;
+		}
+nav ul ol li a
+{
+	color: black;
+	text-decoration: none;
+}
+nav ul ol li a:hover
+{
+	color: white;
+	
+}
+
+#p1{
+padding-top: 22px;padding-left: 10px;
+}
+#p1 font{
+font-family:verdana;font-size:15px;
+}
+#tutorial
+{
+float:right;position: absolute;left:20%;background-color:#DBEEED;width:80%;top:13.3%;height:70%;
+}
+#copyright
+{
+	background-color:#7DE6B1;height:5%;width: 100%;margin-top:1%;
+}
+#p2{
+	margin-top: 0.5%;
+}
+#p2 font{
+	font-family: verdana;
+}

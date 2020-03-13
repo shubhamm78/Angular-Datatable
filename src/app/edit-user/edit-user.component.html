@@ -1,0 +1,29 @@
+<div *ngFor="let user of users">
+<table id="table">
+<p><b> {{user.name | uppercase}}Details</b></p>
+<tr>
+<td>Name:</td>
+<td> <input [(ngModel)]="user.name" name="name" placeholder="name"/></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td ><input [(ngModel)]="user.email" name="email" placeholder="Email"/></td>
+</tr>
+
+<tr>
+<td>phone:</td>
+<td><input [(ngModel)]="user.phone" name="phone" placeholder="Phone"/></td>
+</tr>
+
+<tr>
+<td>Profile:</td>
+<td><input [(ngModel)]="user.profile" name="profile" placeholder="Profile"/></td>
+</tr>
+<tr>
+<td>Make Changes</td>
+<td ><button (click)="updateUser()">Make Changes</button></td>
+</tr>
+
+</table>
+<button (click)="goBack()">Go back</button>
+</div>
