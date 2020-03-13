@@ -70,10 +70,9 @@
   </label><br>
   <label for="validator">
     Terms And Conditions
-  <input id="validator" type="checkbox" formControlName="validator" value="1">
-  <div class="alert" *ngIf="!addForm.controls['color'].valid && addForm.controls['color'].touched">
-  <div class="alert" *ngIf="!addForm.controls['validator'].valid && addForm.controls['validator'].untouched">Please accept Terms and Condition</div>
-</div></label><br>
+  <input id="validator" type="checkbox" formControlName="validator">
+  <div class="alert" *ngIf="!addForm.controls['validator'].valid && addForm.controls['validator'].touched">Please accept Terms and Condition</div>
+</label><br>
 
 <input type="submit" class="button expanded" value="Submit Form" (click)="goBack()" [disabled]="!addForm.valid">
 </div></div>
